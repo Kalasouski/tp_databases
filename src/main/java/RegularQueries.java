@@ -75,7 +75,6 @@ public class RegularQueries implements AutoCloseable{
                         rs.getLong("id"),
                         rs.getString("surname"),
                         rs.getString("name"),
-                        rs.getString("patronymic"),
                         rs.getString("job_position")
                 );
                 result.add(struct);

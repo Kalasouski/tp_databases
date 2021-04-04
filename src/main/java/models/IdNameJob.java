@@ -1,12 +1,15 @@
 package models;
 
-import lombok.AllArgsConstructor;
+import lombok.*;
 
-@AllArgsConstructor
+@Setter @Getter @AllArgsConstructor @NoArgsConstructor
 public class IdNameJob {
-    private final Long id;
-    private final String surname;
-    private final String name;
-    private final String patronymic;
-    private final String jobPosition;
+    private Long id;
+    private String surname;
+    private String name;
+    private String jobPosition;
+
+    public IdNameJob(Long id){
+        this.id = id;
+    }
 }
